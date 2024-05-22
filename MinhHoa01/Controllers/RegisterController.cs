@@ -29,7 +29,7 @@ namespace MinhHoa01.Controllers
             {
                 //xử lý upload
                 //string filename = FHinh.FileName;
-                string filename = Guid.NewGuid().ToString() + Path.GetExtension(FHinh.FileName);
+                string filename = Guid.NewGuid().ToString() + Path.GetExtension(FHinh.FileName);//tạo dãy số ramdom tránh trùng lặp
                 string path = Path.Combine(hosting.WebRootPath, "images");
                 using (var filestream = new FileStream(Path.Combine(path, filename), FileMode.Create))
                 {
