@@ -55,7 +55,7 @@ namespace MinhHoa01.Controllers
         //    return View();
         //}
 
-        //Minh hoạ 2: tiếp nhận tham số thông qua model
+        //Minh hoạ 3: tiếp nhận tham số thông qua model
         public IActionResult XuLy(MayTinhModel mt)
         {
             ////b1.lấy giá trị các tham số (So1, So2, PhepTinh)

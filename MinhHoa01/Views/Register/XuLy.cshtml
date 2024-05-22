@@ -1,0 +1,10 @@
+﻿@model  PersonModel
+<h3>Thông tin đăng ký</h3>
+<hr/>
+<ul>
+    <li>Họ tên: @Model.FullName</li>
+    <li>Ngày sinh: @Model.BirthDay</li>
+    <li>Hình đại diện: <br>
+        <img src="/images/@Model.Picture" width="300px"/>
+    </li>
+</ul>
