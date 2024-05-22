@@ -58,20 +58,20 @@ namespace MinhHoa01.Controllers
         //Minh hoạ 2: tiếp nhận tham số thông qua model
         public IActionResult XuLy(MayTinhModel mt)
         {
-            //b1.lấy giá trị các tham số (So1, So2, PhepTinh)
-            //b2. tính toán kết quả
-            double ketqua = 0;
-            switch (mt.PhepTinh)
-            {
-                case "+": ketqua = mt.So1 + mt.So2; break;
-                case "-": ketqua = mt.So1 - mt.So2; break;
-                case "*": ketqua = mt.So1 * mt.So2; break;
-                case "/": ketqua = mt.So1 / mt.So2; break;
-            }
-            //b3.Trả kêt quả về người dùng
-            // ViewData["KQ"] = ketqua; //truyền dữ liệu cho view thông qua ViewData
-            ViewBag.KQ = ketqua; //truyền dữ liệu cho view thông qua ViewBag
-            return View("Index");
+            ////b1.lấy giá trị các tham số (So1, So2, PhepTinh)
+            ////b2. tính toán kết quả
+            //double ketqua = 0;
+            //switch (mt.PhepTinh)
+            //{
+            //    case "+": ketqua = mt.So1 + mt.So2; break;
+            //    case "-": ketqua = mt.So1 - mt.So2; break;
+            //    case "*": ketqua = mt.So1 * mt.So2; break;
+            //    case "/": ketqua = mt.So1 / mt.So2; break;
+            //}
+            ////b3.Trả kêt quả về người dùng
+            //// ViewData["KQ"] = ketqua; //truyền dữ liệu cho view thông qua ViewData
+            //ViewBag.KQ = mt.KetQua(); //truyền dữ liệu cho view thông qua ViewBag
+            return View("Index",mt);
         }
 
     }

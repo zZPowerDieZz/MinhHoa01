@@ -12,5 +12,19 @@ namespace MinhHoa01.Models
         public double So2 { get; set; }
 
         public string PhepTinh { get; set; }
+
+        public double KetQua()
+        {
+            double ketqua = 0;
+            switch (PhepTinh)
+            {
+                case "+": ketqua = So1 + So2; break;
+                case "-": ketqua = So1 - So2; break;
+                case "*": ketqua = So1 * So2; break;
+                case "/": ketqua = So1 / So2; break;
+            }
+            return ketqua;
+            
+        }
     }
 }

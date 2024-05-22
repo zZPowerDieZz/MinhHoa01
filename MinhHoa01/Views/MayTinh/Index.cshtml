@@ -21,9 +21,9 @@
     </div>
     <button type="submit" class="btn btn-primary">Tính</button>
 </form>
-    @if(ViewBag.KQ != null)
+    @if(Model != null)
         {
-            <h4 class="pt-2"> Kết quả : @ViewBag.KQ</h4>        
+            <h4 class="pt-2"> Kết quả : @Model.KetQua()</h4>        
         }
 
 
