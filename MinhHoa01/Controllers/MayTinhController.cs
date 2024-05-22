@@ -21,7 +21,7 @@ namespace MinhHoa01.Controllers
         //    var x = double.Parse(Request.Form["So1"]);
         //    var y = double.Parse(Request.Form["So2"]);
         //    var op = Request.Form["PhepTinh"];
-        //    //b2. tinh toan ket qua 
+        //    //b2. tính toán kết quả
         //    double ketqua=0;
         //    switch (op)
         //    {
@@ -30,7 +30,7 @@ namespace MinhHoa01.Controllers
         //        case "*": ketqua = x * y; break;
         //        case "/": ketqua = x / y; break;
         //    }
-        //    //b3.Tra ket qua ve nguoi dung
+        //    //b3.Trả kêt quả về người dùng
         //    ViewData["KQ"] = ketqua; //truyền dữ liệu cho view thông qua ViewData
         //    ViewBag.KQ = ketqua; //truyền dữ liệu cho view thông qua ViewBag
         //    return View();
@@ -40,7 +40,7 @@ namespace MinhHoa01.Controllers
         //public IActionResult XuLy(double So1, double So2, string PhepTinh)
         //{
         //    //b1.lấy giá trị các tham số (So1, So2, PhepTinh)
-        //    //b2. tinh toan ket qua 
+        //    //b2. tính toán kết quả 
         //    double ketqua = 0;
         //    switch (PhepTinh)
         //    {
@@ -49,7 +49,7 @@ namespace MinhHoa01.Controllers
         //        case "*": ketqua = So1 * So2; break;
         //        case "/": ketqua = So1 / So2; break;
         //    }
-        //    //b3.Tra ket qua ve nguoi dung
+        //    //b3.Trả kêt quả về người dùng
         //   // ViewData["KQ"] = ketqua; //truyền dữ liệu cho view thông qua ViewData
         //    ViewBag.KQ = ketqua; //truyền dữ liệu cho view thông qua ViewBag
         //    return View();
@@ -68,10 +68,10 @@ namespace MinhHoa01.Controllers
                 case "*": ketqua = mt.So1 * mt.So2; break;
                 case "/": ketqua = mt.So1 / mt.So2; break;
             }
-            //b3.Tra ket qua ve nguoi dung
+            //b3.Trả kêt quả về người dùng
             // ViewData["KQ"] = ketqua; //truyền dữ liệu cho view thông qua ViewData
             ViewBag.KQ = ketqua; //truyền dữ liệu cho view thông qua ViewBag
-            return View();
+            return View("Index");
         }
 
     }
