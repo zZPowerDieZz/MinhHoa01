@@ -1,0 +1,24 @@
+﻿
+<h2>TÍNH TOÁN ĐƠN GIẢN</h2>
+<hr />
+<form asp-action="XuLy" method="post">
+    <div class="form-group">
+        <label>Nhập số thứ 1</label>
+        <input name="So1" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Nhập số thứ 2</label>
+        <input name="So2" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Chọn phép tính</label>
+        <select name="PhepTinh" class="form-control">
+            <option value="+">Cộng</option>
+            <option value="-">Trừ</option>
+            <option value="*">Nhân</option>
+            <option value="/">Chia</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Tính</button>
+</form>
+
